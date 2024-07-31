@@ -62,7 +62,7 @@ export const ModalPrint = () => {
             return (
               <div key={cake.id} className="flex flex-col gap-1 py-5">
                 <div className="flex gap-2">
-                  <div>{cake.peso == 0.6 ? 'Bento cake' : `${cake.peso} kg`}</div>
+                  <div className="text-nowrap">{cake.peso == 0.6 ? 'Bento cake' : `${cake.peso}kg`}</div>
                   {cake.recheio.map((recheio) => recheio.name).join(', ')}
                 </div>
 
