@@ -70,7 +70,7 @@ export const columns: ColumnDef<GetOrder>[] = [
     header: ({ column }) => {
       return <DataTableColumnHeader column={column} title="Data" />
     },
-    cell: ({ cell }) => <div className="text-nowrap">{new Date(cell.getValue<string>()).toLocaleDateString()}</div>,
+    cell: ({ cell }) => <div className="text-nowrap">{new Date(cell.getValue<string>())?.toLocaleDateString()}</div>,
   },
   {
     id: 'name',
